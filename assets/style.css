@@ -1,6 +1,6 @@
 @font-face {
     font-family: loli;
-    src: url("https://meowloli-1314108669.cos.accelerate.myqcloud.com/font/loli.ttc");
+    src: url("./rec/loli.ttc");
 
 }
 body{
@@ -48,7 +48,7 @@ body{
     color: #ff0c9a;
 }
 .button1{
-    background-color: hsl(0, 0%, 0%,0.6); /* Green */
+    background-color: hsl(0, 0%, 0%,0.6);
     border: none;
     color: white;
     padding: 0px 1rem;
@@ -93,4 +93,26 @@ body{
     #textitem{
         display: none;
     }
+}
+.nav{  
+    position: sticky;
+    top: 50px;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgba(24, 3, 3, 0.685);
+    backdrop-filter: blur(15px) saturate(120%);
+    background-size: 100%;
+    padding: 10px 50px 10px 50px;
+    border-radius: 35px;
+    max-width: 400px;
+    margin: auto;
+}
+.nav a{
+    color: pink;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.nav a:hover{
+    background-color: black;
+    border-radius: 30px;
 }

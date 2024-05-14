@@ -1,0 +1,45 @@
+@font-face {
+    font-family: loli;
+    src: url("./rec/loli.ttc");
+
+}
+body{
+    background: url("./img/background.jpg");
+    font-family: loli;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+.imf{
+    padding: 50px;
+    display: grid;
+    grid-template-rows: 400px 400px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.imf4 p:hover{
+    color: pink;
+}
+.nav{  
+    position: sticky;
+    top: 50px;
+    list-style-type: none;
+    text-align: center;
+    background-color: rgba(24, 3, 3, 0.685);
+    backdrop-filter: blur(15px) saturate(120%);
+    background-size: 100%;
+    padding: 10px 50px 10px 50px;
+    border-radius: 35px;
+    max-width: 400px;
+    margin: auto;
+}
+.nav a{
+    color: pink;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.nav a:hover{
+    background-color: black;
+    border-radius: 30px;
+}
