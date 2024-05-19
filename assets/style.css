@@ -1,118 +1,136 @@
 @font-face {
-    font-family: loli;
-    src: url("./rec/loli.ttc");
+   font-family: loli;
+   src: url("./res/loli.woff2");
 
 }
-body{
-    background: url("./img/background.jpg");
-    font-family: loli;
-    backdrop-filter: blur(10px);
+
+body {
+   background: url("./img/background.jpg");
+   font-family: loli;
+   backdrop-filter: blur(10px);
 }
 
-.start #fon{
-    text-align: center;
+.start #fon {
+   text-align: center;
 }
-.imf{
-    display: grid;
-    grid-template-rows: 100px 580px;
-    grid-template-columns: 1fr 1fr;
+
+.imf {
+   display: grid;
+   grid-template-rows: 100px 580px;
+   grid-template-columns: 1fr 1fr;
 }
-.imf img{
-    border-radius: 50%;   
-    position: relative;
-    left: 15rem;
-    top: 7rem;
-    width: 50vh;
-    height: auto;
-    transition: all 0.5s;
+
+.imf img {
+   border-radius: 50%;
+   position: relative;
+   left: 15rem;
+   top: 7rem;
+   width: 50vh;
+   height: auto;
+   transition: all 0.5s;
 }
-.imf img:hover{
-    transform: rotate(360deg);
+
+.imf img:hover {
+   transform: rotate(360deg);
 }
-.imf .name{
-    text-align: center;
-    background-color: rgba(255, 192, 203, 0.4);
-    height: 12rem;
-    width: auto;
-    max-height: 12rem;
-    border-radius: 18px;
-    position: relative;
-    left: 13rem;
-    top: 15rem;
-    transition:all 0.5s;
+
+.imf .name {
+   text-align: center;
+   background-color: rgba(255, 192, 203, 0.4);
+   height: 12rem;
+   width: auto;
+   max-height: 12rem;
+   border-radius: 18px;
+   position: relative;
+   left: 13rem;
+   top: 15rem;
+   transition: all 0.5s;
 }
-.imf .name:hover{
-    transform:scale(1.05,1.05);
+
+.imf .name:hover {
+   transform: scale(1.05, 1.05);
 }
-#fon:hover{
-    color: #ff0c9a;
+
+#fon:hover {
+   color: #ff0c9a;
 }
-.button1{
-    background-color: hsl(0, 0%, 0%,0.6);
-    border: none;
-    color: white;
-    padding: 0px 1rem;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 18px;  
-    font-family: loli;
+
+.button1 {
+   background-color: hsl(0, 0%, 0%, 0.6);
+   border: none;
+   color: white;
+   padding: 0px 1rem;
+   text-align: center;
+   text-decoration: none;
+   font-size: 16px;
+   border-radius: 18px;
+   font-family: loli;
 }
-.where{
-    display: grid;
-    grid-template-rows: 40px 40px 40px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 15px;
-    margin: 10px 20vh;
-    text-align: center;
-    backdrop-filter: blur(1rem);
+
+.where {
+   display: grid;
+   grid-template-rows: 40px 40px 40px;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 15px;
+   margin: 10px 20vh;
+   text-align: center;
+   backdrop-filter: blur(1rem);
 
 }
-#text2{
-    text-align: center;
-}
-.where a{
-    background-color: rgb(255, 192, 203);
-    border-radius: 15px;
-    text-decoration:none;
-    color:black;
 
-    padding: 10px;
-    
+#text2 {
+   text-align: center;
 }
-.where a:hover{
-    color: #ff0c9a;
+
+.where a {
+   background-color: rgb(255, 192, 203);
+   border-radius: 15px;
+   text-decoration: none;
+   color: black;
+
+   padding: 10px;
+
 }
-.footer{
-    text-align: center;
+
+.where a:hover {
+   color: #ff0c9a;
 }
+
+.footer {
+   text-align: center;
+}
+
 @media (max-width: 960px) {
-    #tx{
-        display: none;
-    }
-    #textitem{
-        display: none;
-    }
+   #tx {
+      display: none;
+   }
+
+   #textitem {
+      display: none;
+   }
 }
-.nav{  
-    position: sticky;
-    top: 50px;
-    list-style-type: none;
-    text-align: center;
-    background-color: rgba(24, 3, 3, 0.685);
-    backdrop-filter: blur(15px) saturate(120%);
-    background-size: 100%;
-    padding: 10px 50px 10px 50px;
-    border-radius: 35px;
-    max-width: 400px;
-    margin: auto;
+
+.nav {
+   position: sticky;
+   top: 50px;
+   list-style-type: none;
+   text-align: center;
+   background-color: rgba(24, 3, 3, 0.685);
+   backdrop-filter: blur(15px) saturate(120%);
+   background-size: 100%;
+   padding: 10px 50px 10px 50px;
+   border-radius: 35px;
+   max-width: 400px;
+   margin: auto;
 }
-.nav a{
-    color: pink;
-    text-decoration: none;
-    padding: 10px 20px;
+
+.nav a {
+   color: pink;
+   text-decoration: none;
+   padding: 10px 20px;
 }
-.nav a:hover{
-    background-color: black;
-    border-radius: 30px;
+
+.nav a:hover {
+   background-color: black;
+   border-radius: 30px;
 }
