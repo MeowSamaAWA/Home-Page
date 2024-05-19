@@ -112,6 +112,7 @@ body {
 
 .nav {
    position: sticky;
+   z-index: 999;
    top: 50px;
    list-style-type: none;
    text-align: center;
