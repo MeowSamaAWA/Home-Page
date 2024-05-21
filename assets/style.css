@@ -25,13 +25,13 @@ body {
    text-align: center;
 }
 
-.imf {
+.ifm {
    display: grid;
    grid-template-rows: 100px 580px;
    grid-template-columns: 1fr 1fr;
 }
 
-.imf img {
+.ifm img {
    border-radius: 50%;
    position: relative;
    left: 15rem;
@@ -41,15 +41,15 @@ body {
    transition: all 0.5s;
 }
 
-.imf img:hover {
+.ifm img:hover {
    transform: rotate(360deg);
 }
 
-.imf .name {
+.ifm .name {
    text-align: center;
    background-color: rgba(255, 192, 203, 0.4);
    height: 12rem;
-   width: 120%;
+   width: 100%;
    max-height: 12rem;
    border-radius: 18px;
    position: relative;
@@ -58,24 +58,12 @@ body {
    transition: all 0.5s;
 }
 
-.imf .name:hover {
+.ifm .name:hover {
    transform: scale(1.05, 1.05);
 }
 
 #fon:hover {
    color: #ff0c9a;
-}
-
-.button1 {
-   background-color: hsl(0, 0%, 0%, 0.6);
-   border: none;
-   color: #ffffff;
-   padding: 12px 16px;
-   text-align: center;
-   text-decoration: none;
-   font-size: 16px;
-   border-radius: 18px;
-   font-family: loli;
 }
 
 .where {

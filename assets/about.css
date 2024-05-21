@@ -5,13 +5,17 @@ body {
    padding: 20px 20px;
    border-radius: 30px;
 }
-
-.imf {
-   padding: 50px;
+.idu{
+   display: grid;
    grid-template-rows: 400px 400px;
-   grid-gap: 20px;
+   grid-template-columns: 1fr 1fr;
 }
 
-.imf4 p:hover {
+.ifm4 p:hover {
    color: pink;
+}
+@media (max-width: 960px) {
+   .idu{
+      grid-gap: 70px;
+   }
 }
