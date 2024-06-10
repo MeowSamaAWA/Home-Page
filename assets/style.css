@@ -1,3 +1,8 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
 @font-face {
    font-family: loli;
    src: url("./res/loli.woff2");
@@ -5,8 +10,11 @@
 }
 
 body {
-   background: url("./img/background.jpg");
+   width: 100%;
+   height: 100%;
+   background: url("./img/background.png");
    font-family: loli;
+   overflow: hidden;
 }
 
 /* 设置一个背景的滤镜层，铺满整个页面 */
@@ -21,11 +29,8 @@ body {
    backdrop-filter: blur(8px);
 }
 
-.start #fon {
-   text-align: center;
-}
-
 .ifm {
+   height: 720px;
    display: grid;
    grid-template-rows: 100px 580px;
    grid-template-columns: 1fr 1fr;
@@ -34,8 +39,8 @@ body {
 .ifm img {
    border-radius: 50%;
    position: relative;
-   left: 15rem;
-   top: 7rem;
+   left: 18rem;
+   top: 14rem;
    width: 40vh;
    height: auto;
    transition: all 0.5s;
@@ -47,14 +52,14 @@ body {
 
 .ifm .name {
    text-align: center;
-   background-color: rgba(255, 192, 203, 0.4);
+   background-color: rgba(255, 192, 203, 0.3);
    height: 12rem;
    width: 100%;
    max-height: 12rem;
-   border-radius: 18px;
+   border-radius: 20px;
    position: relative;
-   left: 11rem;
-   top: 15rem;
+   left: 12rem;
+   top: 21rem;
    transition: all 0.5s;
 }
 
@@ -63,35 +68,6 @@ body {
 }
 
 #fon:hover {
-   color: #ff0c9a;
-}
-
-.where {
-   display: grid;
-   grid-template-rows: 40px 40px 40px;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-gap: 15px;
-   margin: 10px 20vh;
-   text-align: center;
-}
-
-#text2 {
-   text-align: center;
-}
-
-.where .bi {
-   margin-right: .5em;
-}
-
-.where a {
-   background-color: rgb(255, 192, 203);
-   border-radius: 15px;
-   text-decoration: none;
-   color: black;
-   padding: 10px;
-}
-
-.where a:hover {
    color: #ff0c9a;
 }
 
@@ -108,6 +84,13 @@ body {
       display: none;
    }
 }
+
+@media (max-height: 880px) {
+   #tx {
+      display: none;
+   }
+}
+
 
 .nav {
    position: sticky;
@@ -133,3 +116,222 @@ body {
    background-color: black;
    border-radius: 30px;
 }
+
+/*用户点击滑动到页面二*/
+.np {
+   text-align: center;
+}
+
+/*设置按钮样式*/
+.np button {
+   width: 100%;
+   height: 50px;
+   border: none;
+   background-color: rgba(0, 0, 0, 0);
+}
+
+/*设置页面宽高*/
+.pg {
+   height: 1080px;
+   width: 100%;
+}
+.leftnav{
+   list-style: none;
+   position: fixed;
+
+   top: 50%;
+   left: 15px;
+
+   text-align: center;
+   transform: translateY(-50%);
+}
+.leftnav li{
+   width: 15px;
+   height: 15px;
+   background-color: white;
+   border-radius: 50%;
+}
+#l1{
+   background-color: red;
+}
+.leftnav li+li{
+   margin-top: 3px;
+}
+.leftnav .atv{
+   background-color: black;
+}
+
+.links {
+   font-family: loli;
+   margin: auto;
+   background-color: rgba(255, 192, 203, 0.2);
+   backdrop-filter: blur(10px) saturate(120%);
+   background-size: 100%;
+   padding: 10px 50px 10px 50px;
+   border-radius: 30px;
+   max-width: 1000px;
+   height: 600px;
+   text-align: center;
+   display: grid;
+   grid-template-rows: 40px 40px 40px;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 120px;
+}
+
+.links a {
+   margin-top: 50%;
+   text-decoration: none;
+   color: black;
+   background-color: rgba(255, 255, 255, 0.4);
+   border-radius: 20px;
+   height: 7rem;
+   line-height: 110px;
+   transition: opacity 0.5s ease, background-color 0.2s ease, border 0.2s ease, transform 0.3s ease;
+}
+.links a:active{
+   transform: scale(0.92);
+}
+.links a:hover {
+   box-shadow: 0 8px 16px -4px #2c2d300c;
+   transform: translateY(-2px);
+}
+
+#lt {
+   text-align: center;
+}
+.card{
+   height: 720px;
+   display: grid;
+   grid-template-rows: 100px 100px 100px;
+   grid-template-columns: 1fr 1fr 1fr;
+   padding-top: 220px;
+   padding-left: 220px;
+   text-align: center;
+}
+.card1:hover{
+   box-shadow: 0 8px 16px -4px #2c2d300c;
+   transform: translateY(-2px);
+}.card2:hover{
+   box-shadow: 0 8px 16px -4px #2c2d300c;
+   transform: translateY(-2px);
+}.card3:hover{
+   box-shadow: 0 8px 16px -4px #2c2d300c;
+   transform: translateY(-2px);
+}
+.card1 {
+   transition: opacity 0.5s ease, background-color 0.2s ease, border 0.2s ease, transform 0.3s ease;
+   width: 400px;
+   height: 400px;
+   background-color: rgba(255, 192, 203, 0.2);
+   box-shadow: 0px 5px 20px #999;
+   border-radius: 20px;
+}        
+.card2 {
+   transition: opacity 0.5s ease, background-color 0.2s ease, border 0.2s ease, transform 0.3s ease;
+   width: 400px;
+   height: 400px;
+   background-color: rgba(255, 192, 203, 0.2);
+   box-shadow: 0px 5px 20px #999;
+   border-radius: 20px;
+
+}        
+.card3 {
+   transition: opacity 0.5s ease, background-color 0.2s ease, border 0.2s ease, transform 0.3s ease;
+   width: 400px;
+   height: 400px;
+   background-color: rgba(255, 192, 203, 0.2);
+   box-shadow: 0px 5px 20px #999;
+   border-radius: 20px;
+}
+ul{
+   list-style: none;
+}
+#tpb{
+   margin-top: 100px;
+}
+@media (max-width: 1485px) {
+   .card{
+      display: flex;
+      text-align: center;
+      padding-top: 15%;
+      padding-left: 0;
+   }
+
+
+}
+@media (max-width: 495px) {
+   .links a{
+      margin-top: 50%;
+   }
+   .links {
+      margin: auto;
+      border-radius: 30px;
+      text-align: center;
+      display: grid;
+      grid-template-rows: 50px 50px 50px;
+      grid-template-columns: 1fr 1fr ;
+   }
+}
+.pg2{
+   width: 100%;
+   height: 1030px;
+}
+
+.sk{
+   margin: auto;
+   background-color: rgba(255, 192, 203, 0.2);
+   backdrop-filter: blur(10px) saturate(120%);
+   background-size: 100%;
+   padding: 25px 55px 20px 50px;
+   border-radius: 30px;
+   max-width: 1000px;
+   height: 600px;
+
+
+}
+.sk p{
+   padding: 8px;
+   z-index: 9;
+   opacity: 0;
+   animation: sk 0.4s ease-in-out 0.3s;
+
+   animation-fill-mode: forwards;
+   transform: translateX(-50px);
+}
+#titile{
+   font-size: xx-large;
+}
+#text{
+
+   margin-left: 10px;
+}
+ .sk:nth-child(1),
+ .enter-x-right:nth-child(1) {
+   animation-delay: 0.1s;
+ }
+ .sk:nth-child(2),
+ .enter-x-right:nth-child(2) {
+   animation-delay: 0.2s;
+ }
+ .sk:nth-child(3),
+ .enter-x-right:nth-child(3) {
+   animation-delay: 0.3s;
+ }
+ .sk:nth-child(4),
+ .enter-x-right:nth-child(4) {
+   animation-delay: 0.4s;
+ }
+ 
+
+ @keyframes sk {
+   to {
+     opacity: 1;
+     transform: translateX(0);
+   }
+ }
+ @keyframes enter-x-right {
+   to {
+     opacity: 1;
+     transform: translateY(0);
+   }
+ }
