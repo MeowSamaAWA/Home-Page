@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8079696034827508"
+     crossorigin="anonymous"></script>
+     <meta name="google-adsense-account" content="ca-pub-8079696034827508">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
@@ -11,23 +14,28 @@
     <link rel="preconnect" href="https://cdn.staticfile.org">
     <!-- 引入初始化样式 -->
     <link rel="stylesheet" href="https://cdn.staticfile.org/normalize/8.0.1/normalize.min.css">
+    <!-- 引入播放器组件 -->
+    <script src="https://npm.elemecdn.com/meting/dist/Meting.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.staticfile.net/aplayer/1.10.1/APlayer.min.js">
+    <script src="https://cdn.staticfile.net/aplayer/1.10.1/APlayer.min.css"></script>
     <!-- 引入Vue & Element UI -->
     <script src="https://cdn.staticfile.net/vue/2.7.14/vue.min.js"></script>
     <script src="https://cdn.staticfile.net/element-ui/2.15.14/index.min.js"></script>
     <!-- 引入图标 & 组件样式 -->
     <link rel="stylesheet" href="https://cdn.staticfile.net/element-ui/2.15.14/theme-chalk/index.min.css">
     <link rel="stylesheet" href="https://cdn.staticfile.net/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-    <title>MeowLoli の Home</title>
+    <title>MeowSama の Home</title>
 </head>
 
 <body>
+
     <script>
         window.onload = function () {
             new Vue({
                 data: function () {
                     this.$notify({
                         title: "欢迎ヾ(≧▽≦*)o",
-                        message: "欢迎来到MeowLoli的个人网站,爱你呦~",
+                        message: "欢迎来到MeowSama的个人网站,爱你呦~",
                         position: 'top-right',
                         offset: 50,
                         showClose: false,
@@ -36,239 +44,51 @@
                     return { visible: false }
                 }
             })
-            new Vue({
-                data: function () {
-                    this.$notify({
-                        title: "蜂群女王Neuro万岁！",
-                        message: "蜂群统治世界",
-                        position: 'top-left',
-                        offset: 50,
-                        showClose: false,
-                        type: "success"
-                    });
-                    return { visible: false }
-                }
-            })
         };
-
     </script>
+
     <div class="bg-filter"></div>
-    <!--顶部导航栏-->
+    <div class="start">
+        <h1 id="fon">うー、だって猫ちゃん怖がってたんだもん</h1>
+    </div>
     <div class="nav">
         <nav>
-            <a href="#">首页</a>
-            <a href="./about.html">详细介绍</a>
-            <a onclick="scrollttop(),setColor1()">Top</a>
+            <a href="">首页</a>
         </nav>
     </div>
-
-    <!--个人信息,分四个页面-->
-    <div class="page">
-        <div class="pg pg1">
-            <div class="ifm">
-                <div class="name">
-                    <h1 id="fon">HI! , I'm MeowLoli</h1>
-                    <h4 id="fon"> <del>变态</del> loli控 / 宅 / しろさき みえる 赛高！<br>/ 14岁,是学生 / 前端开发新手</h4>
-                </div>
-
-                <img src="./assets/img/avatar.png" alt="头像" id="tx">
-            </div>
-            <div class="np">
-                <button onclick="scrollt1(),setColor2()"><i>⬇</i></button>
-            </div>
-        </div>
-
-        <div class="pg pg2">
-            <article class="sk">
-                <p id="titile">Skill</p>
-                <p id="titile">前端</p>
-                <p id="text">HTML5 + CSS3 + JavaScript</p>
-                <p id="titile">后端</p>
-                <p id="text">PHP</p>
-                <p id="titile">Other</p>
-                <p id="text">C# / Python</p>
-            </article>
-            <div class="np">
-                <button onclick="scrollt2(),setColor3()"><i>⬇</i></button>
-            </div>
-        </div>
-
-        <div class="pg pg3">
-            <div class="card">
-                <div class="card1">
-                    <article>
-                        <h1>Game~</h1>
-                        <p>最喜欢的游戏：</p>
-                        <ul>
-                            <li>辐射4</li>
-                            <li>Minecraft</li>
-                            <li>GTA5</li>
-                            <li>CS2</li>
-                            <li>Roblox</li>
-                        </ul>
-                    </article>
-                </div>
-                <div class="card2">
-                    <article>
-                        <img src="./assets/img/neuro.jpeg" style="width: 20vh; border-radius: 100px;">
-                        <h1>Favourite VTuber</h1>
-                        <span onclick="newVueNotice()"><p>Neuro-Sama</p></span>
-                        <script>
-                            function newVueNotice() {
-                                new Vue({
-                                    data: function () {
-                                        this.$notify({
-                                            title: "爱，来自Neuro",
-                                            message: "Heart~Heart~Heart❤️",
-                                            position: 'top-right',
-                                            offset: 50,
-                                            showClose: false,
-                                            type: "success"
-                                        });
-                                        return { visible: false }
-                                    }
-                                })
-                            }
-                        </script>
-                    </article>
-                </div>
-                <div class="card3">
-                    <article>
-                        <h1>电脑配置~</h1>
-                            <p>CPU: E3 1220v3<br>GPU: 七彩虹 GTX1660S<br>主板:华硕b85plus</p>
-                    </article>
-                </div>
-            </div>
-            <div class="np" id="tpb">
-                <button onclick="scrollt3(),setColor4()"><i>⬇</i></button>
-            </div>
+    <hr style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color=#987cb9 size=3>
+    <div class="ifm" >
+        <div class="name" id="name">
+            <h1 id="fon">HI! , I'm MeowSama</h1>
+            <h4 id="fon"> <del>变态</del> loli控 / 宅 / しろさき みえる 赛高！<br>/ 14岁,是学生 / 前端开发新手</h4>
         </div>
 
 
-        <div class="pg pg4">
-            <h1 id="lt">Links</h1>
-            <div class="links">
-                <a href="https://blog.aloli.icu/" ><i class="bi bi-house"></i><span
-                        id="textitem">Blog</span></a>
-                <a href="https://t.me/MeowLoliAWA" target="_blank"><i class="bi bi-telegram"></i><span
-                        id="textitem">Telegram</span></a>
-                <a href="https://admin.qidian.qq.com/static_proxy/b2b-qq/wpa-link/index.html#/person?uin=3196793494"
-                    target="_blank"><i class="bi bi-tencent-qq"></i><span id="textitem">QQ</span></a>
-                <a href="https://twitter.com/MeowLoliQWQ" target="_blank"><i class="bi bi-twitter"></i><span
-                        id="textitem">Twitter</span></a>
-                <a href="mailto:meowloliqwq@gmail.com" target="_blank"><i class="bi bi-envelope"></i><span
-                        id="textitem">Email</span></a>
-                <a href="https://status.aloli.icu/" target="_blank"><i class="bi bi-bar-chart"></i><span
-                        id="textitem">服务器状态</span></a>
-            </div>
-            <br>
-            <div class="np">
-                <button onclick="scrollttop(),setColor1()"><i>↑</i></button>
-            </div>
-        </div>
+    <img src="./assets/img/avatar.png" alt="头像" id="tx">
     </div>
-    <script>
-        function scrollt1() {
-            window.scrollTo({ top: 1080, behavior: "smooth" });
-        }
-        function scrollt2() {
-            window.scrollTo({ top: 2160, behavior: "smooth" });
-
-        }
-        function scrollt3() {
-            window.scrollTo({ top: 3240, behavior: "smooth" });
-        }
-        function scrollttop() {    
-            window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-
-        /*改变侧边栏按钮颜色*/
-        function setColor1() {
-            const a = document.getElementById('l1')
-            const b = document.getElementById('l2')
-            const c = document.getElementById('l3')
-            const d = document.getElementById('l4')
-            a.style.backgroundColor = "red"
-            b.style.backgroundColor = "white"
-            c.style.backgroundColor = "white"
-            d.style.backgroundColor = "white"
-        }
-        function setColor2() {
-            const a = document.getElementById('l1')
-            const b = document.getElementById('l2')
-            const c = document.getElementById('l3')
-            const d = document.getElementById('l4')
-            a.style.backgroundColor = "white"
-            b.style.backgroundColor = "red"
-            c.style.backgroundColor = "white"
-            d.style.backgroundColor = "white"
-        }
-        function setColor3() {
-            const a = document.getElementById('l1')
-            const b = document.getElementById('l2')
-            const c = document.getElementById('l3')
-            const d = document.getElementById('l4')
-            a.style.backgroundColor = "white"
-            b.style.backgroundColor = "white"
-            c.style.backgroundColor = "red"
-            d.style.backgroundColor = "white"
-        }
-        function setColor4() {
-            const a = document.getElementById('l1')
-            const b = document.getElementById('l2')
-            const c = document.getElementById('l3')
-            const d = document.getElementById('l4')
-            a.style.backgroundColor = "white"
-            b.style.backgroundColor = "white"
-            c.style.backgroundColor = "white"
-            d.style.backgroundColor = "red"
-        }
-        
-        /*滚动整页*/
-        document.addEventListener('DOMContentLoaded', function () {
-            let currentPage = 0;
-            const pages = document.querySelectorAll('.pg');
-            function scrollToPage(index) {
-                window.scrollTo({
-                    top: index * 1080,
-                    behavior: 'smooth'
-                });
-            }
-            /*监测鼠标滚轮，监测wheeldelta的值，为正,向上翻页，未负反之 */
-            document.addEventListener('wheel', function (e) {
-                if (e.deltaY > 0 && currentPage < pages.length - 1) {
-                    currentPage++;
-                    console.log("index:" + currentPage);
-                } else if (e.deltaY < 0 && currentPage > 0) {
-                    currentPage--;
-                    console.log("index:" + currentPage);
-                }
-                scrollToPage(currentPage);
-                /*改变侧边栏按钮颜色*/
-                if (currentPage == '0') {
-                    setColor1();
-                }
-                if (currentPage == '1') {
-                    setColor2();
-                }
-                if (currentPage == '2') {
-                    setColor3();
-                }
-                if (currentPage == '3') {
-                    setColor4();
-                }
-            });
-        });
-
-    </script>
-
-    <!--侧边栏-->
-    <ul class="leftnav">
-        <li onclick="scrollttop(),setColor1()" id="l1" class="active"></li>
-        <li onclick="scrollt1(),setColor2()" id="l2"></li>
-        <li onclick="scrollt2(),setColor3()" id="l3"></li>
-        <li onclick="scrollt3(),setColor4()" id="l4"></li>
-    </ul>
+    <br>
+    <hr style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color=#987cb9 size=3>
+    <h1 id="text2">我出现的地方:</h1>
+    <div class="where">
+        <a href="https://blog.meow.ink/" target="_blank"><i class="bi bi-house"></i><span id="textitem">Blog</span></a>
+        <a href="https://t.me/MeowSamaQWQ" target="_blank"><i class="bi bi-telegram"></i><span
+                id="textitem">Telegram</span></a>
+        <a href="https://admin.qidian.qq.com/static_proxy/b2b-qq/wpa-link/index.html#/person?uin=3196793494"
+            target="_blank"><i class="bi bi-tencent-qq"></i><span id="textitem">QQ</span></a>
+        <a href="https://twitter.com/MeowLoSamaQWQ" target="_blank"><i class="bi bi-twitter"></i><span
+                id="textitem">Twitter</span></a>
+        <a href="mailto:meowloli@outlook.com" target="_blank"><i class="bi bi-envelope"></i><span
+                id="textitem">Email</span></a>
+        <a href="https://status.meow.ink/" target="_blank"><i class="bi bi-bar-chart"></i><span
+                id="textitem">服务器状态</span></a>
+    </div>
 </body>
+<footer>
+    <div class="footer" style="text-align: center;">
+        <p>Copyright © 2023 ~ 2024. MeowSama</p>
+        <p>Made by <a href="">MeowSama</a></p>
+    </div>
+    <script charset="UTF-8" src="https://blog.meow.ink/js/showfps.js"></script>
+</footer>
 
 </html>
