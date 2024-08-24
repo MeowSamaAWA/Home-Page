@@ -1,4 +1,5 @@
 
+
     $('.nav div').click(function(){
         target = $(this).attr('to');
         switchTo(target);
@@ -69,18 +70,20 @@ function getAchives(){
         var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
         document.getElementById("runningtime").innerHTML=" 已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
     }
+    var hitokototext = "";
+
     function getHitokoto(){
-            var hitokoto = "";
             $.ajax({
-                type:"get",
-                url:"https://v1.hitokoto.cn/",
+                type:"Post",
+                url:"https://v1.hitokoto.cn",
                 dataType:"json",
                 success:function(data){
                     hitokoto = data.hitokoto;
                     from = data.from;
                     from_who = data.from_who;
                     text = `${hitokoto}<span id="who">——${from_who}<span id="from">[${from}]</span></span>`;
-                    writeHitokoto(text);
+                    hitokototext = text;
+                    writeHitokoto(hitokoto);
                 },
                 error:function(){
                     $('#hitokotocontent').html("[Error] Failed to get hitokoto.");
@@ -89,12 +92,14 @@ function getAchives(){
             });
     }
     function writeHitokoto(text){
-        if (text.length < 30) {
-            $('#hitokotocontent').html(text);
+        if (text.length < 25) {
+            $('#hitokotocontent').html(hitokototext);
         } else {
             getHitokoto();
         }
     }
+
+
 $(document).ready(function(){
 getAchives();
 getHitokoto();
